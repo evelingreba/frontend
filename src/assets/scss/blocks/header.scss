@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.header__download {
+  display: none;
+
+  @include breakpoint($desktop-min) {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.header__nav-list {
+  display: flex;
+  flex-flow: row wrap;
+}

@@ -1,0 +1,41 @@
+.getStarted {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-image: url("../images/Background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $background;
+
+  @include breakpoint($desktop-min) {
+    padding: 0 30px;
+    font-size: 2em;
+  }
+}
+
+.getStarted__button button {
+  border: none;
+  background: none;
+
+  @include breakpoint ($desktop-min) {
+    float: left;
+  }
+
+}
+
+.getStarted__img {
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint ($desktop-min) {
+    justify-content: flex-end;
+  }
+
+}
+
+.getStarted__text {
+  @include breakpoint ($desktop-min) {
+    text-align: left;
+    width: 40%;
+  }
+}

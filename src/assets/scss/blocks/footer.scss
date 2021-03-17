@@ -1,0 +1,37 @@
+.footer {
+  background: #0B0D17;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.footer__nav-links1 {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+}
+
+.footer__nav-links-item {
+  margin-right: 20px;
+}
+
+.footer__nav-links-item a {
+  color: #FFFFFF;
+}
+
+.footer__nav img {
+  width: 32px;
+  height: 32px;
+
+}
+
+.footer__text {
+  color: #D9DBE1;
+}
+
+.footer__share p{
+  color: #D9DBE1;
+}

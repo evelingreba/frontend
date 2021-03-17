@@ -1,0 +1,36 @@
+.header__subNav {
+  display: none;
+
+  @include breakpoint($desktop-min) {
+    background-color: $purple;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    box-shadow: 0 6px 8px rgba(0, 0, 0, .2);
+  }
+}
+
+.header__subNav-link {
+  display: none;
+  @include breakpoint($desktop-min) {
+
+    display: block;
+    padding: 22px;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #18191F;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+      background-color: darken($purple, 10%);
+      color: #FFFFFF;
+
+    }
+  }
+}

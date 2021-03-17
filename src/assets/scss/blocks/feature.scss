@@ -1,0 +1,22 @@
+.features {
+  padding: 64px 20px;
+}
+
+.features__grid {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 64px;
+  margin-top: 48px;
+}
+
+.features__grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__grid-item img {
+  width: 32px;
+  height: 32px;
+  align-self: center;
+}

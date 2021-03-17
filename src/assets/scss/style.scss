@@ -1,0 +1,32 @@
+@import "vars";
+@import "vendor/normalize";
+@import "mixins";
+
+body {
+    height: 100%;
+    font-family: $fontFamily;
+    font-size: 16px;
+    color: $textColor;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@import "blocks/page";
+//@import "blocks/main";
+@import "blocks/getStarted";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/subNav";
+@import "blocks/logoClouds";
+@import "blocks/feature";
+@import "blocks/stories";
+@import "blocks/stats";
+@import "blocks/headline";
+@import "blocks/trends";
+@import "blocks/mobile";
+@import "blocks/footer";
