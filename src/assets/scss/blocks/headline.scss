@@ -1,5 +1,11 @@
 .headline {
   padding: 64px 20px;
+
+  @include breakpoint($desktop-min) {
+    padding: 64px 30px;
+    font-size: 1.2em;
+    min-height: 668px;
+  }
 }
 
 .headline__button {
@@ -24,5 +30,20 @@
   display: block;
   padding-left: 20%;
   padding-right: 20%;
+
+  @include breakpoint($desktop-min) {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin-left: 30px;
+  }
+}
+
+.headline__content {
+  @include breakpoint($desktop-min) {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+  }
 }
 

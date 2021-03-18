@@ -1,17 +1,50 @@
 .mobile {
   background: #2EC5CE;
   padding-top: 64px;
+
+  @include breakpoint($desktop-min) {
+    padding: 0 30px;
+    font-size: 1.2em;
+    min-height: 600px;
+  }
 }
 
 .mobile__content {
   padding: 20px;
+
+  @include breakpoint($desktop-min) {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    margin: 100px;
+    float: left;
+  }
 }
 
-.mobile__img1 {
+.mobile__images {
+  @include breakpoint($desktop-min) {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 600px;
+    align-items: flex-end;
+  }
+}
+
+.mobile__img-top {
   display: none;
+
+  @include breakpoint($desktop-min) {
+    display: inline-block;
+    align-self: flex-start ;
+  }
 }
 
-.mobile__img2 {
-  padding-left: 40%;
-  padding-right: 40%;
+.mobile__img-bottom {
+  margin: 0 auto;
+
+  @include breakpoint($desktop-min) {
+    display: inline-block;
+  }
 }
+
+

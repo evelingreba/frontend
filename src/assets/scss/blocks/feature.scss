@@ -1,13 +1,23 @@
 .features {
   padding: 64px 20px;
+
+  @include breakpoint($desktop-min) {
+    padding: 64px 30px;
+    font-size: 1.2em;
+    min-height: 672px;
+  }
 }
 
 .features__grid {
   display: grid;
-  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 64px;
   margin-top: 48px;
+
+  @include breakpoint($desktop-min) {
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  }
 }
 
 .features__grid-item {
