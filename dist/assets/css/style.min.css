@@ -405,6 +405,9 @@ body {
 .get-started__content {
   max-width: 1600px;
   margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .get-started__content {
+      padding-top: 170px; } }
 
 .get-started__img {
   display: inline-block; }
@@ -417,6 +420,9 @@ body {
     display: inline-block;
     text-align: left;
     width: 40%; } }
+
+.get-started__text h3 {
+  margin-top: 0; }
 
 .header {
   background: rgba(242, 247, 255, 0.7);

@@ -14,6 +14,10 @@
 
 .get-started__content {
   @include content_max-width;
+
+  @include breakpoint($desktop-min) {
+    padding-top: 170px;
+  }
 }
 
 .get-started__img {
@@ -31,5 +35,9 @@
     text-align: left;
     width: 40%;
   }
+}
+
+.get-started__text h3 {
+  margin-top: 0;
 }
 
