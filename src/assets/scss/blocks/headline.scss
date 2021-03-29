@@ -13,8 +13,7 @@
 }
 
 .headline__button {
-  display: flex;
-  flex-direction: row;
+  display: block;
   width: 143px;
   height: 30px;
   margin-bottom: 20px;
@@ -26,6 +25,14 @@
   line-height: 30px;
 
   color: $purple;
+}
+
+.headline__button p {
+  display: inline-block;
+}
+
+.headline__button img {
+  display: inline-block;
 }
 
 .headline__phone {

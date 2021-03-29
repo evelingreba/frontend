@@ -11,6 +11,7 @@
   &:hover {
 
     .header__nav-link {
+      position: relative;
       background-color: $purple;
       color: #FFFFFF;
     }

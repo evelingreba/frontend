@@ -1,7 +1,11 @@
 .stories {
   position: relative;
   background: #D5FAFC;
+  background-image: url("../images/QuoteMark.svg");
+  background-repeat: no-repeat;
+  background-position: left 200px top 64px;
   padding: 120px 30px;
+
 
   @include breakpoint($desktop-min) {
     padding: 120px 30px;
@@ -22,7 +26,7 @@
   top: 64px;
 
   opacity: 0.3;
-  z-index: 0;
+  z-index: -1;
 }
 
 .stories__testimonials {

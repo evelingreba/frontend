@@ -9,6 +9,13 @@
 
 .stats__content {
   @include content_max-width;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+  }
 }
 
 .stats__grid {
@@ -44,6 +51,3 @@
   }
 }
 
-.stats__clearfix {
-  clear: both;
-}

@@ -426,11 +426,12 @@ body {
 
 .header {
   background: rgba(242, 247, 255, 0.7);
-  backdrop-filter: blur(100px);
   width: 100%;
   z-index: 1;
   position: sticky;
   top: 0; }
+  .header:after {
+    filter: blur(4px); }
 
 .header__content {
   display: flex;
@@ -449,12 +450,6 @@ body {
 
 .header__nav-list {
   display: flex;
-  flex-flow: row wrap;
-  position: sticky;
-  top: 0; }
-
-.header__nav-list {
-  display: flex;
   align-items: center;
   margin: 10px;
   padding: 0; }
@@ -462,6 +457,7 @@ body {
 .header__nav-item {
   position: relative; }
   .header__nav-item:hover .header__nav-link {
+    position: relative;
     background-color: #8C30F5;
     color: #FFFFFF; }
   .header__nav-item:hover > .header__subNav {
@@ -538,8 +534,12 @@ body {
   padding: 24px; }
 
 .logo-clouds img {
+  display: inline-block; }
+
+.logo-clouds__item {
   display: inline-block;
-  margin: 10px; }
+  margin: 10px;
+  max-width: 120px; }
 
 .features {
   padding: 64px 20px; }
@@ -569,6 +569,9 @@ body {
 .stories {
   position: relative;
   background: #D5FAFC;
+  background-image: url("../images/QuoteMark.svg");
+  background-repeat: no-repeat;
+  background-position: left 200px top 64px;
   padding: 120px 30px; }
   @media screen and (min-width: 768px) {
     .stories {
@@ -587,7 +590,7 @@ body {
   left: 21%;
   top: 64px;
   opacity: 0.3;
-  z-index: 0; }
+  z-index: -1; }
 
 .stories__testimonials {
   display: flex;
@@ -663,6 +666,11 @@ body {
 .stats__content {
   max-width: 1600px;
   margin: 0 auto; }
+  .stats__content:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both; }
 
 .stats__grid {
   display: grid;
@@ -691,9 +699,6 @@ body {
     text-align: left;
     width: 30%; } }
 
-.stats__clearfix {
-  clear: both; }
-
 .headline {
   padding: 64px 20px; }
   @media screen and (min-width: 768px) {
@@ -707,8 +712,7 @@ body {
   margin: 0 auto; }
 
 .headline__button {
-  display: flex;
-  flex-direction: row;
+  display: block;
   width: 143px;
   height: 30px;
   margin-bottom: 20px;
@@ -718,6 +722,12 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #8C30F5; }
+
+.headline__button p {
+  display: inline-block; }
+
+.headline__button img {
+  display: inline-block; }
 
 .headline__phone {
   display: block;
