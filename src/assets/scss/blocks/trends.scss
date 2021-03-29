@@ -8,12 +8,15 @@
   }
 }
 
+.trends__content {
+  @include content_max-width;
+}
+
 .trends h2 {
   @include breakpoint($desktop-min) {
     display: inline-block;
     width: 40%;
-    float: left;
-    margin-left: 100px;
+    padding-right: 10px;
   }
 }
 
@@ -24,10 +27,9 @@
   }
 }
 
-.trends img {
-  @include breakpoint($desktop-min) {
-    margin: 0 auto;
-  }
+.trends__content-image {
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 

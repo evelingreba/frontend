@@ -4,14 +4,16 @@
   @include breakpoint($desktop-min) {
     padding: 80px 30px;
     font-size: 1.2em;
-    min-height: 500px;
-    margin-bottom: 80px;
   }
+}
+
+.stats__content {
+  @include content_max-width;
 }
 
 .stats__grid {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 40px;
   margin-top: 48px;
@@ -25,15 +27,13 @@
 }
 
 .stats__grid-item {
-  display: flex;
-  flex-direction: column;
   padding: 20px;
 }
 
 .stats__grid-item img {
   width: 32px;
   height: 32px;
-  align-self: center;
+  margin: 0 auto;
 }
 
 .stats__text {
@@ -42,4 +42,8 @@
     text-align: left;
     width: 30%;
   }
+}
+
+.stats__clearfix {
+  clear: both;
 }

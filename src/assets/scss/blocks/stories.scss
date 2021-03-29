@@ -10,7 +10,11 @@
   }
 }
 
-.stories__quoteMark img {
+.stories__content {
+  @include content_max-width;
+}
+
+.stories__quoteMark {
   position: absolute;
   width: 143px;
   height: 120px;
@@ -18,6 +22,7 @@
   top: 64px;
 
   opacity: 0.3;
+  z-index: 0;
 }
 
 .stories__testimonials {
@@ -33,29 +38,9 @@
   }
 }
 
-.stories__testimonials-1 {
-  display: block;
-  max-width: 350px;
-  height: auto;
-  margin: 0 auto;
-  text-align: left;
-
-  background: $background;
-
-  box-shadow: 0 10px 20px rgba(41, 41, 42, 0.07);
-  border-radius: 8px;
-
-  padding: 32px;
-
-  @include breakpoint($desktop-min) {
-    min-width: 350px;
-  }
-}
-
-.stories__testimonials-2 {
+.stories__testimonials-item {
   display: block;
   max-width: 445px;
-  height: auto;
   margin: 30px 0;
 
   background: $background;
@@ -64,21 +49,9 @@
   border-radius: 8px;
 
   padding: 32px;
+  text-align: left;
 }
 
-.stories__testimonials-3 {
-  display: block;
-  max-width: 350px;
-  height: auto;
-  margin: 30px 0;
-
-  background: $background;
-
-  box-shadow: 0 10px 20px rgba(41, 41, 42, 0.07);
-  border-radius: 8px;
-
-  padding: 32px;
-}
 
 .testimonials__name {
   font-weight: bold;
@@ -92,23 +65,31 @@
 .stories__testimonials-logo img {
   width: 140px;
   height: 40px;
-  left: 32px;
-  top: 32px;
 
   margin-bottom: 32px;
 }
 
-.stories__testimonials-quoteMark img {
-  position: absolute;
-  width: 16px;
-  height: 14px;
-
-  opacity: 0.3;
-
-  padding-right: 0;
+.stories__testimonials-content p {
+  display: inline-block;
+  margin-top: 0;
+  width: 340px;
 }
 
-.stories__testimonials-content {
+.stories__testimonials-quoteMark {
+  display: inline-block;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.stories__testimonials-content img{
+  display: inline-block;
+  width: 16px;
+
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.stories__testimonials-personalInfo {
   margin-left: 32px;
 }
 
@@ -116,6 +97,14 @@
   @include breakpoint($desktop-min) {
     display: inline-block;
     text-align: left;
-    width: 50%;
+    width: 45%;
   }
 }
+
+.stories__title .stories__testimonials-item {
+  margin: 0 auto;
+  @include breakpoint($desktop-min) {
+    margin-right: 30px;
+  }
+}
+

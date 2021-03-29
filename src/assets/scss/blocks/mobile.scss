@@ -10,24 +10,25 @@
 }
 
 .mobile__content {
+  @include content_max-width;
+  min-height: 600px;
+}
+
+.mobile__text {
   padding: 20px;
 
   @include breakpoint($desktop-min) {
     display: inline-block;
     text-align: left;
     width: 40%;
-    margin: 100px;
-    float: left;
+    margin-left: auto;
+    vertical-align: top;
+    padding: 68px 10px 0 0;
   }
 }
 
-.mobile__images {
-  @include breakpoint($desktop-min) {
-    display: flex;
-    flex-flow: row wrap;
-    min-height: 600px;
-    align-items: flex-end;
-  }
+.mobile__text img {
+  display: inline-block;
 }
 
 .mobile__img-top {
@@ -35,16 +36,24 @@
 
   @include breakpoint($desktop-min) {
     display: inline-block;
-    align-self: flex-start ;
+    vertical-align: top;
+    padding-right: 10px;
   }
 }
 
-.mobile__img-bottom {
+.mobile__img-bottom{
   margin: 0 auto;
 
   @include breakpoint($desktop-min) {
     display: inline-block;
+    width: 232px;
+    padding-top: 200px;
   }
+}
+
+.mobile__img-bottom img {
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 

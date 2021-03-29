@@ -8,25 +8,22 @@
   }
 }
 
-.features__grid {
+.features__list {
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 64px;
-  margin-top: 48px;
+  padding: 48px;
+
+  @include content_max-width;
 
   @include breakpoint($desktop-min) {
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.features__grid-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.features__grid-item img {
+.features__item img {
   width: 32px;
   height: 32px;
-  align-self: center;
+  margin: 0 auto;
 }

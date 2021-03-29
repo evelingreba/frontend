@@ -3,6 +3,10 @@
   padding: 30px;
 }
 
+.footer__content {
+  @include content_max-width;
+}
+
 .footer__nav {
   display: flex;
   flex-direction: column;
@@ -18,17 +22,17 @@
   }
 }
 
-.footer__nav-links {
+.footer__links {
   display: flex;
   flex-flow: row wrap;
   padding-left: 0;
 }
 
-.footer__nav-links-item {
+.footer__links-item {
   margin-right: 20px;
 }
 
-.footer__nav-links-item a {
+.footer__links-item a {
   color: #FFFFFF;
 }
 
@@ -53,4 +57,9 @@
     vertical-align: top;
     width: 50%;
   }
+}
+
+.footer__share img {
+  display: inline-block;
+  margin: 6px;
 }

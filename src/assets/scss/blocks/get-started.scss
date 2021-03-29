@@ -1,11 +1,9 @@
-.getStarted {
-  display: block;
-  position: relative;
-  width: 100%;
+.get-started {
   background-image: url("../images/Background2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $background;
+  margin: 0 auto;
 
   @include breakpoint($desktop-min) {
     min-height: 866px;
@@ -14,7 +12,11 @@
   }
 }
 
-.getStarted__img {
+.get-started__content {
+  @include content_max-width;
+}
+
+.get-started__img {
   display: inline-block;
 
   @include breakpoint ($desktop-min) {
@@ -23,10 +25,11 @@
 
 }
 
-.getStarted__text {
+.get-started__text {
   @include breakpoint ($desktop-min) {
     display: inline-block;
     text-align: left;
     width: 40%;
   }
 }
+
