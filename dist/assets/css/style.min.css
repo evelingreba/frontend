@@ -625,7 +625,7 @@ body {
 .stories__testimonials-content p {
   display: inline-block;
   margin-top: 0;
-  width: 340px; }
+  max-width: 340px; }
 
 .stories__testimonials-quoteMark {
   display: inline-block;
